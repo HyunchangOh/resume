@@ -1,0 +1,365 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Hyunchang Oh</title>
+</head>
+<body>
+    <div id="head">
+        <h1>Hyunchang Oh</h1>
+        (+82) 10 5777 1998 | developers@kaist.ac.kr | https://github.com/hyunchangoh
+        <div class="float"><a href="korean.html">한국어</a></div>
+        <div class="dot">last updated: 17:41, Sept 27, 2020.</div>
+        
+        <div class="item">Research Interests</div>
+        Interactive Computing for Bio-Machine Interfaces
+        <br>
+        Using Computer Science to Demolish Language & Culture Barriers<br>
+    </div>
+    <div id="content">
+        <div>
+            <div class="section">Education</div>
+            <div class="liner"></div>
+            <div class="item">KAIST</div>
+            <div class="float">
+                Daejeon, S. Korea
+                <div class="floatsub">2017.03 - 2022.02 (Expected)</div>
+            </div>
+            <div class="sub">B.S. in Computer Science & Biological Sciences</div>
+            <div class="dot">Fully Funded by <b>the President of Korea</b> (2017 Spring ~2019 Spring)</div>
+            <div class="dot">KAIST Presidential Fellowship (KPF)</div>
+            <div class="dot">Leadership Certificate - Diamond Class</div>
+
+            <br>
+            <div class="sub">Smart Energy Artificial Intelligence Research Center</div>
+            <div class="dot">Completion of the 30hr Course "Natural Language Processing and BERT" <span class="modal-trigger">(Certificate in Korean)</span></div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img src="images/cert_bert.JPG" alt="certificate for BERT not loaded" class="modal-content">
+            </div>
+
+            <div class="dot">Completion of the 30hr Course "Problem Solving and Estimation"  <span class="modal-trigger">(Certificate in Korean)</span></div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img src="images/cert_data.JPG" alt="certificate for BERT not loaded" class="modal-content">
+                <div class="caption"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                for(i=0;i<document.getElementsByClassName("modal").length;i++){
+                    let modal = document.getElementsByClassName("modal")[i];
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    let img = document.getElementsByClassName("modal-trigger")[i];
+                    let modalImg = document.getElementsByClassName("modal-content")[i];
+                    let captionText = document.getElementsByClassName("caption")[i];
+                    img.addEventListener("click",function(){
+                        modal.style.display = "block";
+                        // modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    });
+                                    // When the user clicks on <span> (x), close the modal
+                    $(document).on('click', function(e) {
+                        if(!(e.target.className=="modal-trigger")){
+                            modal.style.display = "none";
+                        }
+                    });
+                }
+            </script>
+
+
+            <div class="item">University of California, Berkeley</div>
+            <div class="float">
+                Berkeley, CA, U.S.A.
+                <div class="floatsub">2017.06 - 2017.08</div>
+            </div>
+            <div class="sub">U.C. Berkeley Summer Session</div>
+            <div class="dot">Took courses on "Multivariable Calculus", and "General Psychology"</div>
+            <div class="dot">Fully Funded by <b>the President of KAIST</b></div>
+
+            <div class="item">Korea Science Academy of KAIST</div>
+            <div class="float">
+                Busan, S. Korea
+                <div class="floatsub">2014.02 - 2017.02</div>
+            </div>
+            <div class="dot">Summa Cum Laude in Biological Sciences (1st Place)</div>
+
+            <div class="item">Camborne Science and International Academy</div>
+            <div class="float">
+                Camborne, England
+                <div class="floatsub">2016.07</div>
+            </div>
+            <div class="sub">Short Term Exchange Student</div>
+            <div class="dot">Built a functional prototype for rocket-propelled vehicle.</div>
+            <div class="dot">Took an ecological survey of shores at Godrevy.</b></div>
+
+            <div class="item">Moscow Chemical Lyceum</div>
+            <div class="float">
+                Moscow, Russia
+                <div class="floatsub">2015.08</div>
+            </div>
+            <div class="sub">10th Chemistry Summer School</div>
+            <div class="dot">Synthesised and Tested Antibiotics and Organic Sensor Molecules</div>
+
+        </div>
+        <div>
+            <div class="section">Publications</div>
+            <div class="liner"></div>
+            <div class="item">Metal Organic Frameworks</div>
+            
+            <div class="sub">Nanochemistry Lab, Korea Science Academy (Prof. Eun-Young Choi)</div>
+            <div class="float2">
+                Busan, S. Korea
+            </div>
+            <div class="dot"><span class="bold">1st Author</span> <a href="https://www.intechopen.com/books/recent-advancements-in-the-metallurgical-engineering-and-electrodeposition/ionothermal-synthesis-of-metal-organic-framework">"Ionothermal Synthesis of Metal-Organic Framework"</a> <span class="italic">InTechOpen</span> (2018) </div>
+
+            <div class="dot"><span class="bold">1st Author</span> <a href="https://biomedres.us/pdfs/BJSTR.MS.ID.000996.pdf">"Tabular Organisation of Ionothermally Prepared MOFs To Extrapolate Chemical Trends and Successfully Predict Synthesis Results"</a> <span class="italic">Biomedical Journal of Scientific & Technical Research</span> (2018) </div>
+
+            <div class="dot"><span class="bold">2nd Author</span> <a href="https://link.springer.com/article/10.1007/s13233-017-5147-0">"Microporous metal organic framework-based copolymers with efficient gas adsorption capability and high temporal stability"</a> <span class="italic">Macromolecular Research</span> (2017) </div>
+
+            <div class="dot"><span class="bold">1st Author</span> <a href="https://www.hindawi.com/journals/amse/2017/3237247/">"Ionothermal synthesis of a novel 3D cobalt coordination polymer with a uniquely reported framework:[BMI] 2 [Co2 (BTC) 2 (H2O) 2]."</a><span class="italic">Advances in Materials Science and Engineering</span> (2017) </div>
+
+            <div class="dot"><span class="bold">1st Author</span> "The Effect of [RMI] X (R= alkyl; X= halide) Ionic Liquids on the Formation of M-H₃BTC Metal Organic Frameworks" <span class="italic">Korean Polymer Society 40th Annual Conference</span> (2016) </div>
+
+            <div class="item">Neural Stem Cells</div>
+            <div class="sub">Animal Cell Biology Lab, Korea Science Academy (Dr. Ki-Youb Park)</div>
+            <div class="float2">
+                Busan, S. Korea
+            </div>
+            <div class="dot"><span class="bold">2nd Author</span> <a href="https://www.koreascience.or.kr/article/JAKO201720861205214.page">"Inhibition of Neurogenesis of Subventricular Zone Neural Stem Cells by 5-ethynyl-2-deoxyuridine (EdU)."</a> <span class="italic">Korean Journal of Biological Sciences</span> (2017) </div>
+            
+        </div>
+        <div>
+            <div class="section">Unpublished Research Projects</div>
+            <div class="liner"></div>
+            
+            <div class="item">Human Computer Interaction</div>
+            
+            <div class="sub"><a href="http://nmail.kaist.ac.kr/">NMAIL</a> (Neuro-Machine Augmented Intelligence Laboratory), School of Computing, KAIST (Prof. Sungho, Jo)</div>
+            <div class="float2">
+                Daejeon, S. Korea
+                <div class="floatsub">2020.08-Present</div>
+            </div>
+            <div class="dot"><span class="bold">Research Intern: </span>Controlling Drones with Brain Waves</div>
+
+            
+            <div class="sub"><a href="https://www.kixlab.org/">KIXLAB</a> (KAIST Interaction Lab), School of Computing, KAIST (Prof. Juho, Kim)</div>
+            <div class="float2">
+                Daejeon, S. Korea
+                <div class="floatsub">2020.01-2020.08</div>
+            </div>
+            <div class="dot"><span class="bold">Research Intern / URP Participant: </span>Personalized Correction and Expansion of Vocabulary Use Based on User’s Speech</div>
+            
+            <div class="item">Microbial Fuel Cells</div>
+            <div class="sub">Catalysis & Green Energy Laboratory, Pukyung National University (Prof. Hee-Chul, Woo)</div>
+            <div class="float2">
+                Busan, S. Korea
+            </div>
+            <div class="italic2">Received DGIST Presidential Award in the 5th National Joint Symposium on Research and Education.</div>
+            <div class="dot"><span class="bold">Microbial Fuel Cells on Lignin</span> Design of Microbial Fuel Cells that can Decompose and Extract energy from lignin, a biologically Inert Compound that Forms the Bulk of Wood. (2015) </div>
+            <br>
+            <div class="sub">Analytic Chemistry Lab, Korea Science Academy (Dr. Man-Seok, Cheon)</div>
+            <div class="float2">
+                Busan, S. Korea
+            </div>
+            <div class="dot"><span class="bold">Microbial Desalination Cell</span> Tested various membranes, microbial consortia, metabolites, etc. for optimal desalination of seawater of Korea. (2016) </div>
+            <br>
+            <div class="sub">Sigma Lab, National Junior College</div>
+            <div class="float2">
+                Singapore
+            </div>
+            <div class="dot"><span class="bold">Microbial Desalination Cell</span> Tested various electrolyte for each microbial consortium for optimal desalination of seawater of Singapore. (2017) </div>
+
+
+            <div class="item">Organic Sensors for Metal Ions</div>
+            <div class="sub">Organic Synthesis Lab, Korea Science Academy (Dr. Jinho Oh)</div>
+            <div class="float2">
+                Busan, S. Korea
+            </div>
+            <div class="dot"> Synthesised organic sensors based on given recipe, and tested their functions on various metal ions. Used Infrared Spectroscopy(IR) and Nuclear Magnetic Resonance (NMR) to confirm successful synthesis (2015) </div>
+            <br>
+
+            <div class="sub">Moscow Chemical Lyceum</div>
+            <div class="float2">
+                Moscow, Russia
+                
+            </div>
+            <div class="dot">Substituted ligands, where metal ions bind, with many different candidate subparts and tested how they affect the sensitivity of the sensor. (2015) </div>
+        </div>
+        <div>
+            <div class="section">Ex-Curricular Activities</div>
+            <div class="liner"></div>
+
+            <div class="item">Writing & Publication</div>
+
+            <div class="sub">KAIST Research Magazine</div>
+            <div class="float2">Daejeon, S. Korea
+                <div class="floatsub">2020.08~ Present</div>
+            </div>
+            <div class="dot"><span class="bold">Reporter:</span>  
+            Organised the first issue of the magazine along with the school administration. Interviewed various researchers of KAIST and wrote research-related articles.</div>
+
+            <br>
+            <div class="sub"><a href="https://times.kaist.ac.kr/">KAIST Times</a></div>
+            <div class="float2">S. Korea
+                <div class="floatsub">2017.09-2019.06</div>
+            </div>
+            <div class="dot"><span class="bold">Head of Dept. of Scholastics</span>
+                Writes and Reviews Articles on Concurrent Research Projects at KAIST, Contemporary Research <br> Areas, and Tech Issues</div>
+            <div class="dot"><span class="bold">Reporter on Culture:</span>Writes Articles on Contemporary Culture Issues, Movies, Exhibitions, and Books</div>
+            <br>
+
+
+
+            <div class="item">Translation</div>
+
+            <div class="sub">KAIST Freshman Program Designers</div>
+            <div class="float2">Daejeon, S. Korea
+                <div class="floatsub">2020.08~ Present</div>
+            </div>
+            <div class="dot"><span class="bold">Translator:</span>  
+            Translated the learning materials of the mandatory course, 'Exciting College Life(Studienberatung Programme)'</div>
+            <br>
+
+            <div class="item">Mentoring & Social Service</div>
+            <div class="sub">KAIST Presidential Fellowship</div>
+
+            <div class="dot"><span class="bold">Head of Bureau of Intl. Relations: </span>  
+            Organised 1st Joint Contextual Research Project with Centre for Innovation, <br>Indian Institute of Technology, Madras(IITM)</div>
+            <div class="float4">Chennai, India
+                <div class="floatsub">2019.08, 2020.1</div>
+            </div>
+            <div class="littlebr"> </div>
+            <div class="dot"><span class="bold">Student Head</span></div>
+            <div class="float3">Daejeon, S. Korea
+                <div class="floatsub">2017.12-2018.12</div>
+            </div>
+            <div class="dot3"><span class="bold">Seminar Organiser:</span>  Organised and operated student seminars on various research areas, including Machine Learning, Model Building in Chemistry, and Neuroscience.</div>
+
+            <div class="dot3"><span class="bold">Social Works Organiser:</span>  Organised and operated student volunteer works.</div>
+
+
+            <br>
+            <div class="sub">KAIST Leadership Executing Team (K-Let)</div>
+            <div class="dot"><span class="bold">Student Mentor: </span>Prepared lessons for younger students to foster team-building, dream-searching, <br>improving self-esteem, etc.</div>
+            <div class="float4">Boeun/ Daejeon/ Geumsan, S.Korea
+                <div class="floatsub">2017.02-2019.08</div>
+            </div>
+            <div class="dot"><span class="bold">Program Organiser: </span>Organised and Participated the 1st Talented Youth Camp, supported by Chungcheongnamdo Office of Education.</div>
+            <div class="float4">Primorsky Krai, Russia
+                <div class="floatsub">2017.12-2018.01</div>
+            </div>
+            <br>
+
+        
+            <div class="item">Teaching & Knowledge Sharing</div>
+            <div class="sub">KAIST Global Strategy Institute 3rd Forum <a href="https://www.youtube.com/watch?v=fbj7YVgvKPI&t=10920s">(Youtube)</a></div>
+            <div class="float2">Daejeon, S.Korea <div class="floatsub">2020.09</div></div>
+            <div class="dot"><span class="bold">Panel: </span> Raised ethical questions on transhumanism and biotechnology</div>
+                       
+            <br>
+            <div class="sub">KAIST School of Computing</div>
+            <div class="float2">Daejeon, S.Korea <div class="floatsub">2019.08-Present</div></div>
+            <div class="dot"><span class="bold">Lab Session TA: </span> TA for CS101, Intro. to Programming course, responsible for the mandatory lab sessions.</div>
+            <div class="dot"><span class="bold">Supplementary Material Authour: </span> Provided answers and explanations with video & documentation on lab sessions, homeworks, and practice quizes.</div>
+            
+            <br>
+            <div class="sub">KAIST Prototyping Group (kOOk)</div>
+            <div class="float2">Daejeon, S.Korea <div class="floatsub">2019.01-2020.02</div></div>
+            <div class="dot"><span class="bold">Seminar Presenter: </span>Presented Seminars on HTML/CSS and MongoDB</div>
+            <div class="dot"><span class="bold">Founding Member: </span>Planned and attended seminars on Flask, R, ReactJS, and other prototyping-related tools.</div>
+
+            <br>
+            <div class="sub">KAIST Center for Gifted Education</div>
+            <div class="dot"><span class="bold">Tutor: </span> Teaching programming with Python to elementary school students</div>
+            <div class="float3">Daejeon, S.Korea <div class="floatsub">2020.09-Present</div></div>
+            <div class="littlebr"></div>
+            <div class="dot"><span class="bold">Temporary Tutor: </span> Took part in the "Summer Programming Camp", that involved basics of programming and hands-on experience with Arduino.</div>
+            <div class="float4">Daejeon, S.Korea <div class="floatsub">2020.08</div></div>
+
+
+            <br>
+            <div class="sub">Midam Scholarship Committee</div>
+            <div class="float3">Daejeon, S.Korea <div class="floatsub">2017.08-2017.12</div></div>
+            <div class="dot"><span class="bold">English Lecturer: </span> Taught high school students for the Korean College Scholastic Ability Test.</div>
+        </div>
+
+        <div>
+            <div class="section">Major Awards</div>
+            <div class="liner"></div>
+
+            <div class="sub"><a href="http://www.alcob.org/kor/view.do?menuNo=187">2nd e-ICON World Contest</a></div>
+            <div class="float2">Gyeongju, S.Korea
+                <div class="floatsub">2016.08</div>
+            </div>
+            <div class="dot"><span class="bold">(World) 2nd Place: </span>Culang: social network with word-to-word translation along with sentence-wise translation to naturally pick up foreign culture and language</div>
+            
+
+            <br>
+            <div class="sub">Korea Science Academy R&E Programme</div>
+            <div class="float2">Busan, S.Korea
+                <div class="floatsub">2015.02~ 2015.12</div>
+            </div>
+
+            <div class="dot"><span class="bold">5th National R&E Joint Forum - DGIST Presidential Award</span> </div>
+            <div class="dot"><span class="bold">(School) Solo Excellence Award / Group Participation Award:</span> Design of Microbial Fuel Cell that Degrades and Yields Energy from a Biochemically Inert Substance, Lignin</div>
+            
+
+            <br>
+            <div class="sub"><a href="https://www.sciencechallenge.or.kr/result/paper.hsc?searchMasterCode=15101418021876123CCJ&searchCategory=">Hanwha Science Challenge</a></div>
+            <div class="float2">Daejeon, S.Korea
+                <div class="floatsub">2015.08~ 2015.12</div>
+            </div>
+            <div class="dot"><span class="bold">(National) Bronze Prize:</span> Design of Radiation Detection Kit with Antibiotic-Resistance Gene</div>
+
+            <br>
+            <div class="sub"><a href="http://www.kypt.or.kr/main/board/read.action?q=238f4d46b9f273c6996ef8a57521b32cbfa32b47038e34c0c4eb005014625f52e42003f3dfc655cd27335b017d341b620a8f3115b11f9b74acd771022164f194">Korea Young Physicists' Tournament </a></div>
+            <div class="float2">Incheon, S.Korea
+                <div class="floatsub">2015.01</div>
+            </div>
+            <div class="dot"><span class="bold">(National) Silver Medal:</span> Explored Characteristics of Artificial Muscle Made of Nylon / Researched on Why Wet Fabrics Look Darker</div>
+
+        </div>
+
+        <div>
+            <div class="section">Projects</div>
+            <div class="liner"></div>
+
+            <div class="dot">2019 <span class="bold2">Yet Nonamed</span> Testing False Positive Speech Recognition Using Evolutionary Algorithms</div>
+
+            <div class="dot">2019 <span class="bold2">Travelling Salesman Problem Solver</span> Solves Travelling Salesman Problem with Stochastic Algorithms</div>
+
+            <div class="dot">2019 <span class="bold2">Parapipe</span> Task Organiser that Shapes Tasks as Parallel Pipelines</div>
+
+            <div class="dot">2019 <span class="bold2">re:Cruit</span> Job Hunting Platform for Students</div>
+
+            <div class="dot">2019 <span class="bold2">PoZangZee</span> Renovated Email System for Expert Users</div>
+
+            <div class="dot">2018 <span class="bold2">Mumurm</span> Crowdsourcing Service for Restful Places</div>
+
+            <div class="dot">2016 <span class="bold2">Culang</span> Culture & Language Exchange at Scale via Social Media</div>
+
+        </div>
+        <div>
+            <div class="section">Skills</div>
+            <div class="liner"></div>
+            <div class="dot2"><span class="bold3">Languages</span> Korean(Native), English(Fluent), Chinese(Intermediate, HSK5), German(Elementary), Russian(Elementary) </div>
+
+            <div class="dot2"><span class="bold3">Programming Languages</span> Python, Javascript, Java, C, HTML/CSS </div>
+
+            <div class="dot2"><span class="bold3">Frameworks</span> Flask, MongoDB, ReactJS </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="liner"></div>
+        </div>
+        <div class="floor"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="krstyle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Hyunchang Oh</title>
+</head>
+<body>
+    <div id="head">
+        <h1>Hyunchang Oh</h1>
+        (+82) 10 5777 1998 | developers@kaist.ac.kr | <a href="https://github.com/hyunchangoh">https://github.com/hyunchangoh</a>
+        <div class="dot">last updated: 17:41, Sept 27, 2020.</div>
+        <div class="float"><a href="index.html">English</a></div>
+    </div>
+    <div id="content">
+        <div>
+            <div class="section">학력</div>
+            <div class="liner"></div>
+            <div class="item">KAIST</div>
+            <div class="float">
+                대전, 대한민국
+                <div class="floatsub">2017.03 - 2023.08 (군복무 후 졸업 예정)</div>
+            </div>
+            <div class="sub">전산학부 / 생명과학과 복수전공</div>
+            <div class="dot">카이스트 총장 장학생 (KPF)</div>
+            <div class="dot">대통령과학장학생</div>
+            <div class="dot">리더십 마일리지 인증서 - 다이아몬드 등급</div>
+
+            <br>
+            <div class="sub">스마트 에너지 인공지능 연구센터</div>
+            <div class="dot">문제 해결형 인공지능 기술개발 교육 수료 - 자연어 처리 및 BERT 실습 <span class="modal-trigger">(수료증)</span></div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img src="images/cert_bert.JPG" alt="certificate for BERT not loaded" class="modal-content">
+            </div>
+
+            <div class="dot">문제 해결형 인공지능 기술개발 교육 수료 - 데이터 분석 및 예측 <span class="modal-trigger">(수료증)</span></div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img src="images/cert_data.JPG" alt="certificate for BERT not loaded" class="modal-content">
+                <div class="caption"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                for(i=0;i<document.getElementsByClassName("modal").length;i++){
+                    let modal = document.getElementsByClassName("modal")[i];
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    let img = document.getElementsByClassName("modal-trigger")[i];
+                    let modalImg = document.getElementsByClassName("modal-content")[i];
+                    let captionText = document.getElementsByClassName("caption")[i];
+                    img.addEventListener("click",function(){
+                        modal.style.display = "block";
+                        // modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    });
+                                    // When the user clicks on <span> (x), close the modal
+                    $(document).on('click', function(e) {
+                        if(!(e.target.className=="modal-trigger")){
+                            modal.style.display = "none";
+                        }
+                    });
+                }
+            </script>
+
+            <div class="item">University of California, Berkeley</div>
+            <div class="float">
+                버클리, 캘리포니아, 미국
+                <div class="floatsub">2017.06 - 2017.08</div>
+            </div>
+            <div class="sub">U.C. Berkeley Summer Session</div>
+            <div class="dot">다변수 미적분학, 일반심리학</div>
+            <div class="dot">카이스트 총장님께 교육비 및 체재비 전액을 지원받았습니다.</div>
+
+            <div class="item">KAIST부설 한국과학영재학교</div>
+            <div class="float">
+                부산, 대한민국
+                <div class="floatsub">2014.02 - 2017.02</div>
+            </div>
+            <div class="dot">생명과학 최우등 졸업</div>
+
+            <div class="item">Camborne Science and International Academy</div>
+            <div class="float">
+                캠본, 콘월, 영국
+                <div class="floatsub">2016년 여름</div>
+            </div>
+            <div class="sub">단기교환학생</div>
+            <div class="dot">로켓 추진 동체 프로토타입 제작.</div>
+            <div class="dot">고드레비 해변가 생태 탐사.</b></div>
+
+            <div class="item">모스크바 화학 영재학교</div>
+            <div class="float">
+                모스크바, 러시아
+                <div class="floatsub">2015.08</div>
+            </div>
+            <div class="sub">10th Chemistry Summer School</div>
+            <div class="dot">항생제 / 중금속을 탐지하는 유기 센서 합성 및 성능 실험</div>
+
+        </div>
+        <div>
+            <div class="section">저서</div>
+            <div class="liner"></div>
+            <div class="item">유기금속복합구조 (무기화학/신소재)</div>
+            
+            <div class="sub">나노화학연구실, 한국과학영재학교 (최은영 교수님 지도)</div>
+            <div class="float2">
+                부산, 대한민국
+            </div>
+            <div class="dot"><span class="bold">제1저자, 국제출판 학술저서</span> <a href="https://www.intechopen.com/books/recent-advancements-in-the-metallurgical-engineering-and-electrodeposition/ionothermal-synthesis-of-metal-organic-framework">"Ionothermal Synthesis of Metal-Organic Framework"</a> <span class="italic">InTechOpen</span> (2018) </div>
+
+            <div class="dot"><span class="bold">제1저자, 국제학술저널</span> <a href="https://biomedres.us/pdfs/BJSTR.MS.ID.000996.pdf">"Tabular Organisation of Ionothermally Prepared MOFs To Extrapolate Chemical Trends and Successfully Predict Synthesis Results"</a> <span class="italic">Biomedical Journal of Scientific & Technical Research</span> (2018) </div>
+
+            <div class="dot"><span class="bold">제2저자, SCI급 국제학술저널</span> <a href="https://link.springer.com/article/10.1007/s13233-017-5147-0">"Microporous metal organic framework-based copolymers with efficient gas adsorption capability and high temporal stability"</a> <span class="italic">Macromolecular Research</span> (2017) </div>
+
+            <div class="dot"><span class="bold">제1저자, SCI급 국제학술저널</span> <a href="https://www.hindawi.com/journals/amse/2017/3237247/">"Ionothermal synthesis of a novel 3D cobalt coordination polymer with a uniquely reported framework:[BMI] 2 [Co2 (BTC) 2 (H2O) 2]."</a><span class="italic">Advances in Materials Science and Engineering</span> (2017) </div>
+
+            <div class="dot"><span class="bold">제1저자, 국제학회 발표</span> "The Effect of [RMI] X (R= alkyl; X= halide) Ionic Liquids on the Formation of M-H₃BTC Metal Organic Frameworks" <span class="italic">Korean Polymer Society 40th Annual Conference</span> (2016) </div>
+
+            <div class="item">신경줄기세포</div>
+            <div class="sub">동물세포실험실, 한국과학영재학교 (박기엽 박사님 지도)</div>
+            <div class="float2">
+                부산, 대한민국
+            </div>
+            <div class="dot"><span class="bold">제2저자, 국내학술저널</span> <a href="https://www.koreascience.or.kr/article/JAKO201720861205214.page">"Inhibition of Neurogenesis of Subventricular Zone Neural Stem Cells by 5-ethynyl-2-deoxyuridine (EdU)."</a> <span class="italic">한국생명과학회지</span> (2017) </div>
+            
+        </div>
+        <div>
+            <div class="section">출판되지 않은 연구 프로젝트</div>
+            <div class="liner"></div>
+            
+            <div class="item">인간-컴퓨터 상호작용</div>
+            
+            <div class="sub"><a href="http://nmail.kaist.ac.kr/">NMAIL</a> (신경-기계 증강 지능 연구실), 전산학부, KAIST (조성호 교수님 지도)</div>
+            <div class="float2">
+                대전, 대한민국
+                <div class="floatsub">2020.08-Present</div>
+            </div>
+            <div class="dot"><span class="bold">연구인턴: </span>뇌파로 드론을 조종하는 연구</div>
+            <br>
+            <div class="sub"><a href="https://www.kixlab.org/">KIXLAB</a> (카이스트 인터랙션 연구실), 전산학부, KAIST (김주호 교수님 지도)</div>
+            <div class="float2">
+                대전, 대한민국
+                <div class="floatsub">2020.01-2020.08</div>
+            </div>
+            <div class="dot"><span class="bold">연구인턴: 사용자 스피치에 기반한 어휘의 개인 맞춤 교정 및 확장</span></div>
+            
+            <div class="item">미생물연료전지</div>
+            <div class="sub">촉매 및 그린에너지 연구실, 부경대학교 (우희철/장호남 교수님 지도)</div>
+            <div class="float2">
+                부산, 대한민국
+            </div>
+            <div class="italic2">제5회 전국 R&E 공동발표회 - DGIST 총장상</div>
+            <div class="dot"><span class="bold">리그닌을 연료로 하는 미생물연료전지</span> 폐목재의 대부분을 이루며 생화학적으로 분해가 어려운 리그닌을 분해해 에너지를 얻는 미생물연료전지 제작 (2015) </div>
+            <br>
+            <div class="sub">분석화학연구실, 한국과학영재학교 (천만석 박사님 지도)</div>
+            <div class="float2">
+                부산, 대한민국
+            </div>
+            <div class="dot"><span class="bold">미생물담수화전지</span> 대한민국의 해수를 담수화할 수 있는 미생물담수화전지의 제작을 위해 여러 종류의 이온 교환막, 미생물 조성, 먹이 등 조건을 탐색(2016) </div>
+            <br>
+            <div class="sub">시그마 연구실, National Junior College</div>
+            <div class="float2">
+                싱가포르
+            </div>
+            <div class="dot"><span class="bold">미생물담수화전지</span> 싱가포르의 해수를 담수화할 수 있는 미생물담수화전지의 제작을 위해 각 미생물 조성 별로 다양한 전해질 실험 (2017) </div>
+
+
+            <div class="item">금속이온 탐지 유기센서</div>
+            <div class="sub">유기합성실험실, 한국과학영재학교 (오진호 박사님 지도)</div>
+            <div class="float2">
+                부산, 대한민국
+            </div>
+            <div class="dot"> 다양한 금속 이온을 감지할 수 있는 유기 센서 합성 및 성능 실험. IR 및 NMR을 이용해 합성 성공 여부 확인. (2015) </div>
+            <br>
+
+            <div class="sub">모스크바 화학 영재학교</div>
+            <div class="float2">
+                모스크바, 러시아
+                
+            </div>
+            <div class="dot"> 유기 센서의 리간드를 여러 후보 물질로 치환해 유기 센서의 성능 개선 (2015) </div>
+        </div>
+        <div>
+            <div class="section">학외 활동</div>
+            <div class="liner"></div>
+
+            <div class="item">저작 및 출판 활동</div>
+
+            <div class="sub">KAIST 리서치 매거진</div>
+            <div class="float2">대전, 대한민국
+                <div class="floatsub">2020.08~ 현재</div>
+            </div>
+            <div class="dot"><span class="bold">기자:</span> KAIST 연구기획처와 함께 리서치 매거진 첫 호를 기획. KAIST의 여러 연구자를 인터뷰 한 뒤 기사 작성.</div>
+
+            <br>
+            <div class="sub"><a href="https://times.kaist.ac.kr/">카이스트신문</a></div>
+            <div class="float2">대한민국
+                <div class="floatsub">2017.09-2019.06</div>
+            </div>
+            <div class="dot"><span class="bold">학술부장: </span>KAIST의 연구성과 및 과학/기술 이슈에 대한 기사 작성, 교정 및 편집</div>
+            <div class="dot"><span class="bold">문화부 기자: </span>예술 전시, 영화, 도서 및 문화 이슈에 대한 기사 작성.</div>
+            <br>
+
+
+
+            <div class="item">번역</div>
+
+            <div class="sub">KAIST 새내기 프로그램 디자이너</div>
+            <div class="float2">대전, 대한민국
+                <div class="floatsub">2020.08~ 현재</div>
+            </div>
+            <div class="dot"><span class="bold">역자: </span>  
+            KAIST 1학년 필수과목 "신나는 대학생활" 교육자료 번역</div>
+            <br>
+
+            <div class="item">리더십 활동</div>
+            <div class="sub">KAIST 총장 장학생</div>
+
+            <div class="dot"><span class="bold">국제협력부장: </span>  
+            IIT Madras와 함께 제 1회 Contextual Research Exchange Program을 기획 및 진행</div>
+            <div class="float4">첸나이, 인도
+                <div class="floatsub">2019.08, 2020.1</div>
+            </div>
+            <div class="littlebr"> </div>
+            <div class="dot"><span class="bold">학생 대표</span></div>
+            <div class="float3">대전, 대한민국
+                <div class="floatsub">2017.12-2018.12</div>
+            </div>
+            <div class="dot3"><span class="bold">학술 세미나 관리:</span>  화학적 모델 설계, 기계 학습, 신경과학 등 다양한 세부 주제의 학술 세미나 관리 및 참여</div>
+
+            <div class="dot3"><span class="bold">봉사활동 관리:</span>  유성구청과 협업해 인근 중학교로 학생들을 파견해 멘토링 진행</div>
+
+
+            <br>
+            <div class="sub">카이스트 실천 리더십 단체(K-Let)</div>
+            <div class="dot"><span class="bold">멘토: </span>자기존중, 진로설계 등 리더십 관련 주제로 강연 진행</div>
+            <div class="float4">보은/ 대전/ 금산, 대한민국
+                <div class="floatsub">2017.02-2019.08</div>
+            </div>
+            <div class="dot"><span class="bold">캠프 진행 멘토: </span>충청남도교육청과 함께 소외계층 영재학생들 대상 멘토링 캠프 진행.</div>
+            <div class="float4">연해주 일대, 러시아
+                <div class="floatsub">2017.12-2018.01</div>
+            </div>
+            <br>
+
+        
+            <div class="item">교육 및 지식 공유</div>
+            <div class="sub">카이스트 글로벌전략연구소 제 3회 국제포럼 <a href="https://www.youtube.com/watch?v=fbj7YVgvKPI&t=10920s">(Youtube)</a></div>
+            <div class="float2">대전, 대한민국 <div class="floatsub">2020.09</div></div>
+            <div class="dot"><span class="bold">패널: </span> 생명공학의 발전 및 트랜스휴머니즘의 윤리적 문제 제기</div>
+                       
+            <br>
+            <div class="sub">카이스트 전산학부</div>
+            <div class="float2">대전, 대한민국 <div class="floatsub">2019.08-현재</div></div>
+            <div class="dot"><span class="bold">랩 세션 조교: </span> CS101 (프로그래밍 기초) 과목의 랩 세션 담당 조교로 활동.</div>
+            <div class="dot"><span class="bold">랩 세션 보조자료 제작: </span> CS101 (프로그래밍 기초) 과목의 랩 세션/과제/연습 퀴즈 답안 및 해설 자료 제작.</div>
+            
+            <br>
+            <div class="sub">KAIST 프로로타이핑 그룹 (kOOk)</div>
+            <div class="float2">대전, 대한민국 <div class="floatsub">2019.01-2020.02</div></div>
+            <div class="dot"><span class="bold">세미나 발표자: </span>HTML/CSS 및 MongoDB를 주제로 세미나 준비 및 진행</div>
+            <div class="dot"><span class="bold">창립 멤버: </span>단체 운영 기획 및 Flask, R, Machine Learning 등 프로토타이핑 관련 주제의 세미나 참여</div>
+
+            <br>
+            <div class="sub">KAIST 영재교육센터</div>
+            <div class="dot"><span class="bold">튜터: </span> 초등 영재학생들 대상 파이썬 기초 강의 진행</div>
+            <div class="float3">대전, 대한민국 <div class="floatsub">2020.09-현재</div></div>
+            <div class="littlebr"></div>
+            <div class="dot"><span class="bold">기간제 튜터: </span> 여름 프로그래밍 캠프에 참여해 프로그래밍의 기초, 스크래치와 아두이노를 활용한 프로그래밍 실습 등 진행</div>
+            <div class="float4">대전, 대한민국 <div class="floatsub">2020.08</div></div>
+
+
+            <br>
+            <div class="sub">미담장학회</div>
+            <div class="float3">대전, 대한민국 <div class="floatsub">2017.08-2017.12</div></div>
+            <div class="dot"><span class="bold">영어강사: </span> 고등학생들 대상 수능 영어 강의.</div>
+        </div>
+
+        <div>
+            <div class="section">주요 수상</div>
+            <div class="liner"></div>
+
+            <div class="sub"><a href="http://www.alcob.org/kor/view.do?menuNo=187">2nd e-ICON World Contest</a></div>
+            <div class="float2">경주, 대한민국
+                <div class="floatsub">2016.08</div>
+            </div>
+            <div class="dot"><span class="bold">(세계) 2위: </span>단어별 번역과 문장별 번역의 비교 제시를 통해 외국의 문화와 언어를 자연스레 습득하는 소셜 네트워크 개발</div>
+            
+
+            <br>
+            <div class="sub">한국과학영재학교 R&E 프로그램</div>
+            <div class="float2">부산, 대한민국
+                <div class="floatsub">2015.02~ 2015.12</div>
+            </div>
+
+            <div class="dot"><span class="bold">제5회 전국 R&E 공동발표회 - DGIST 총장상</span> </div>
+            <div class="dot"><span class="bold">(교내) 개인 우수상 / 단체 장려상:</span> 폐목재의 대부분을 이루며 생화학적으로 분해가 어려운 리그닌을 분해해 에너지를 얻는 미생물연료전지 제작</div>
+            
+
+            <br>
+            <div class="sub"><a href="https://www.sciencechallenge.or.kr/result/paper.hsc?searchMasterCode=15101418021876123CCJ&searchCategory=">한화사이언스챌린지</a></div>
+            <div class="float2">대전, 대한민국
+                <div class="floatsub">2015.08~ 2015.12</div>
+            </div>
+            <div class="dot"><span class="bold">(국내) 동상:</span> 항생제 저항성 유전자를 이용한 방사선 피폭 위해도 진단 kit 개발</div>
+
+            <br>
+            <div class="sub"><a href="http://www.kypt.or.kr/main/board/read.action?q=238f4d46b9f273c6996ef8a57521b32cbfa32b47038e34c0c4eb005014625f52e42003f3dfc655cd27335b017d341b620a8f3115b11f9b74acd771022164f194">한국청소년물리토너먼트 </a></div>
+            <div class="float2">인천, 대한민국
+                <div class="floatsub">2015.01</div>
+            </div>
+            <div class="dot"><span class="bold">(국내) 은상:</span> 나일론 섬유를 이용한 인공 근육의 특성 / 젖은 섬유가 어둡게 보이는 이유에 대한 연구 진행</div>
+
+        </div>
+
+
+
+        <div>
+            <div class="section">개인 프로젝트</div>
+            <div class="liner"></div>
+
+            <div class="dot">2019 <span class="bold2">Yet Nonamed</span> Testing False Positive Speech Recognition Using Evolutionary Algorithms</div>
+
+            <div class="dot">2019 <span class="bold2">Travelling Salesman Problem Solver</span> Solves Travelling Salesman Problem with Stochastic Algorithms</div>
+
+            <div class="dot">2019 <span class="bold2">Parapipe</span> Task Organiser that Shapes Tasks as Parallel Pipelines</div>
+
+            <div class="dot">2019 <span class="bold2">re:Cruit</span> Job Hunting Platform for Students</div>
+
+            <div class="dot">2019 <span class="bold2">PoZangZee</span> Renovated Email System for Expert Users</div>
+
+            <div class="dot">2018 <span class="bold2">Mumurm</span> Crowdsourcing Service for Restful Places</div>
+
+            <div class="dot">2016 <span class="bold2">Culang</span> Culture & Language Exchange at Scale via Social Media</div>
+
+        </div>
+        <div>
+            <div class="section">유틸리티</div>
+            <div class="liner"></div>
+            <div class="dot2"><span class="bold3">자연어</span> 한국어(모국어), 영어(제1언어), 중국어(HSK5급), 독일어(기초적), 러시아어(기초적), 스페인어(기초적) </div>
+
+            <div class="dot2"><span class="bold3">프로그래밍 언어</span> Python, Javascript, Java, C, HTML/CSS </div>
+
+            <div class="dot2"><span class="bold3">프레임워크</span> Flask, MongoDB, ReactJS </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="liner"></div>
+        </div>
+        <div class="floor"></div>
+    </div>
+</body>
+</html>

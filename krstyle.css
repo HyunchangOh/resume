@@ -1,0 +1,241 @@
+body{
+    margin: 0 20% 0 20%;
+    font-family: 'Montserrat', sans-serif;
+    /* line-height: 0.8em; */
+}
+
+#head{
+    margin-top:5vh;
+}
+
+.section{
+    background-color: white;
+    padding: 0 2vw 0 0;
+    z-index: 10;
+    position:relative;
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.item{
+    margin-top:1em;
+    font-size: 1.2em;
+    font-weight:500;
+    line-height: 1.3em;
+}
+
+.item2{
+    margin-top:1em;
+    font-size: 1.2em;
+    font-weight:500;
+    line-height: 1.3em;
+    margin-bottom:1em;
+}
+
+.sub{
+    margin-top:0.3em;
+    line-height: 1.2em;
+    font-size:0.9em;
+    font-weight: 500;
+}
+
+.dot{
+    font-size:0.8em;
+    line-height:1.5em;
+    margin-top: 0.5em;
+}
+
+.dot2{
+    font-size:0.9em;
+    margin-bottom:0.5em;
+}
+
+.dot3{
+    font-size:0.7em;
+    margin-bottom:0.2em;
+}
+
+b{
+    font-weight:500;
+}
+
+.float{
+    float: right;
+    text-align:right;
+    position: relative;
+    font-size:0.9em;
+    top:-1.5em;
+    color: cornflowerblue;
+}
+
+.float2{
+    float: right;
+    text-align:right;
+    position: relative;
+    font-size:0.8em;
+    top:-1.4em;
+    color: cornflowerblue;
+}
+
+.float3{
+    float: right;
+    text-align:right;
+    position: relative;
+    font-size:0.7em;
+    top:-1.5em;
+    color: cornflowerblue;
+    margin:0;
+}
+
+.float4{
+    float: right;
+    text-align:right;
+    position: relative;
+    font-size:0.3em;
+    top:-4em;
+    color: cornflowerblue;
+    margin:0;
+}
+
+.floatsub{
+    font-size: 0.7em;
+    line-height:2em;
+    color: grey;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.italic2{
+    font-style:italic;
+    font-size:0.7em;
+    line-height:0.9em;
+    margin-top: 0.5em;
+}
+
+.bold{
+    font-weight:500;
+}
+
+.bold2{
+    font-weight:500;
+    margin:0 2vw 0 1vw;
+}
+
+.bold3{
+    font-weight:500;
+    margin:0 2vw 0 0;
+}
+
+
+.liner{
+    height:0;
+    border-bottom: 1px solid grey;
+    position: relative;
+    top: -1.8em;
+    width:100%;
+}
+
+.floor{
+    height:50vh;
+}
+
+.lang{
+    float: right;
+    text-align:right;
+    position: relative;
+    font-size:0.9em;
+    top:-1.5em;
+}
+
+.littlebr{
+    display:block;
+    height:0.5em;
+}
+
+
+/* MODAL */
+
+/* Style the Image Used to Trigger the Modal */
+.modal-trigger {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.modal-trigger:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+  /* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 30vw;
+}
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+  /* Add Animation - Zoom in the Modal */
+.modal-content, .caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+  
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
