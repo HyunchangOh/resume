@@ -1,0 +1,358 @@
+<html lang="cmn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="krstyle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Hyunchang Oh</title>
+</head>
+<body>
+    <div id="head">
+        <h1>吴炫昌</h1>
+        (+82) 10 5777 1998 | developers@kaist.ac.kr | <a href="https://github.com/hyunchangoh">https://github.com/hyunchangoh</a>
+        <div class="dot"> 最终修订: 17:41, Sept 27, 2020.</div>
+        <div class="float"><a href="index.html">English </a> <a href="korean.html">Korean</a></div>
+    </div>
+    <div id="content">
+        <div>
+            <div class="section">学历</div>
+            <div class="liner"></div>
+            <div class="item">KAIST</div>
+            <div class="float">
+                大田, 大韩民国
+                <div class="floatsub">2017.03 - 2023.08 (义务兵役后预定毕业)</div>
+            </div>
+            <div class="sub">计算机/ 生命科学 双学位</div>
+            <div class="dot">取得《KAIST总长奖学金(KPF)》</div>
+            <div class="dot">取得《韩国大统领科学奖学金》</div>
+            <div class="dot">KAIST领导力认证制度 - 钻石级（最高级）</div>
+
+            <br>
+            <div class="sub">精灵能源/人工智能研究中心</div>
+            <div class="dot">修了《问题解决的人工智能技术开发教育》课程 - 自然语言处理与BERT实习 <span class="modal-trigger">(韩文修了证)</span></div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img src="images/cert_bert.JPG" alt="certificate for BERT not loaded" class="modal-content">
+            </div>
+
+            <div class="dot">修了《问题解决的人工智能技术开发教育》课程 - 资料分析与预测 <span class="modal-trigger">(韩文修了证)</span></div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img src="images/cert_data.JPG" alt="certificate for BERT not loaded" class="modal-content">
+                <div class="caption"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                for(i=0;i<document.getElementsByClassName("modal").length;i++){
+                    let modal = document.getElementsByClassName("modal")[i];
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    let img = document.getElementsByClassName("modal-trigger")[i];
+                    let modalImg = document.getElementsByClassName("modal-content")[i];
+                    let captionText = document.getElementsByClassName("caption")[i];
+                    img.addEventListener("click",function(){
+                        modal.style.display = "block";
+                        // modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    });
+                                    // When the user clicks on <span> (x), close the modal
+                    $(document).on('click', function(e) {
+                        if(!(e.target.className=="modal-trigger")){
+                            modal.style.display = "none";
+                        }
+                    });
+                }
+            </script>
+
+            <div class="item">柏克莱加州大学</div>
+            <div class="float">
+                柏克莱, 加州, 美国
+                <div class="floatsub">2017.06 - 2017.08</div>
+            </div>
+            <div class="sub">柏克莱加州大学夏校</div>
+            <div class="dot">多元微积分学, 一般心理学</div>
+            <div class="dot">KAIST总长支援宿舍费</div>
+
+            <div class="item">KAIST附设韩国科学英才学校</div>
+            <div class="float">
+                釜山, 大韩民国
+                <div class="floatsub">2014.02 - 2017.02</div>
+            </div>
+            <div class="dot">生命科学冠军毕业</div>
+
+            <div class="item">Camborne科学与国际学校</div>
+            <div class="float">
+                康沃尔（Cornwall), 英国
+                <div class="floatsub">2016 夏季</div>
+            </div>
+            <div class="sub">短期交换学生</div>
+            <div class="dot">制作火箭车原型</div>
+            <div class="dot">探查Godrevy海边的生态</b></div>
+
+            <div class="item">莫斯科化学英才学校</div>
+            <div class="float">
+                莫斯科, 俄罗斯
+                <div class="floatsub">2015.08</div>
+            </div>
+            <div class="sub">第十回化学夏校</div>
+            <div class="dot"> 合成有机抗生剂与探知重金属元素的有机传感器</div>
+
+        </div>
+        <div>
+            <div class="section">著书</div>
+            <div class="liner"></div>
+            <div class="item">有机金属复合构造 (无机化学)</div>
+            
+            <div class="sub">纳米化学研究室, 韩国科学英才学校 (최은영教授领导)</div>
+            <div class="float2">
+                釜山, 大韩民国
+            </div>
+            <div class="dot"><span class="bold">第一著者, 国际出版的学术著书</span> <a href="https://www.intechopen.com/books/recent-advancements-in-the-metallurgical-engineering-and-electrodeposition/ionothermal-synthesis-of-metal-organic-framework">"Ionothermal Synthesis of Metal-Organic Framework"</a> <span class="italic">InTechOpen</span> (2018) </div>
+
+            <div class="dot"><span class="bold">第一著者, 国际学术期刊</span> <a href="https://biomedres.us/pdfs/BJSTR.MS.ID.000996.pdf">"Tabular Organisation of Ionothermally Prepared MOFs To Extrapolate Chemical Trends and Successfully Predict Synthesis Results"</a> <span class="italic">Biomedical Journal of Scientific & Technical Research</span> (2018) </div>
+
+            <div class="dot"><span class="bold">第二著者, 国际学术期刊</span> <a href="https://link.springer.com/article/10.1007/s13233-017-5147-0">"Microporous metal organic framework-based copolymers with efficient gas adsorption capability and high temporal stability"</a> <span class="italic">Macromolecular Research</span> (2017) </div>
+
+            <div class="dot"><span class="bold">第一著者, 国际学术期刊</span> <a href="https://www.hindawi.com/journals/amse/2017/3237247/">"Ionothermal synthesis of a novel 3D cobalt coordination polymer with a uniquely reported framework:[BMI] 2 [Co2 (BTC) 2 (H2O) 2]."</a><span class="italic">Advances in Materials Science and Engineering</span> (2017) </div>
+
+            <div class="dot"><span class="bold">第一著者, 国际学会</span> "The Effect of [RMI] X (R= alkyl; X= halide) Ionic Liquids on the Formation of M-H₃BTC Metal Organic Frameworks" <span class="italic">Korean Polymer Society 40th Annual Conference</span> (2016) </div>
+
+            <div class="item">神经干细胞</div>
+            <div class="sub">动物细胞研究室, 韩国科学英才学校 (박기엽博士领导)</div>
+            <div class="float2">
+                釜山，大韩民国
+            </div>
+            <div class="dot"><span class="bold">第二著者, 国内学术期刊</span> <a href="https://www.koreascience.or.kr/article/JAKO201720861205214.page">"Inhibition of Neurogenesis of Subventricular Zone Neural Stem Cells by 5-ethynyl-2-deoxyuridine (EdU)."</a> <span class="italic">韩国生命科学会纸</span> (2017) </div>
+            
+        </div>
+        <div>
+            <div class="section">未出版研究</div>
+            <div class="liner"></div>
+            
+            <div class="item">人间计算机相互作用</div>
+            
+            <div class="sub"><a href="http://nmail.kaist.ac.kr/">NMAIL</a> (神经-机器增强只能研究室), 计算学部, KAIST (조성호 教授领导)</div>
+            <div class="float2">
+                大田，大韩民国
+                <div class="floatsub">2020.08-现在</div>
+            </div>
+            <div class="dot"><span class="bold">研究实习生: </span>用脑波操作无人机</div>
+            <br>
+            <div class="sub"><a href="https://www.kixlab.org/">KIXLAB</a> (相互作用研究室), 计算学部, KAIST (김주호 教授领导)</div>
+            <div class="float2">
+                大田，大韩民国
+                <div class="floatsub">2020.01-2020.08</div>
+            </div>
+            <div class="dot"><span class="bold">研究实习生: 使用者谈话基盘个人词汇改正与扩张</span></div>
+            
+            <div class="item">微生物燃料电池</div>
+            <div class="sub">触媒与綠色能源研究室, 釜京大学 (우희철/장호남 教授领导)</div>
+            <div class="float2">
+                釜山，大韩民国
+            </div>
+            <div class="italic2">第五回全国R&E共同发表会 - DGIST总长表彰</div>
+            <div class="dot"><span class="bold">木质素能源微生物燃料电池：</span> 制作分解木质素得能源的微生物燃料电池 (2015) </div>
+            <br>
+            <div class="sub">分析化学, 韩国科学英才学校 (천만석 博士领导)</div>
+            <div class="float2">
+                釜山，大韩民国
+            </div>
+            <div class="dot"><span class="bold">微生物淡水化电池：</span> 为了用微生物淡水化电池把韩国海水变成淡水，做离子交换膜，微生物群，微生物饮食实验(2016) </div>
+            <br>
+            <div class="sub">Sigma研究室, 国家初级学院</div>
+            <div class="float2">
+                新加坡
+            </div>
+            <div class="dot"><span class="bold">微生物淡水化电池：</span> 为了用微生物淡水化电池把新加坡海水变成淡水，跟各种微生物做电解质实验 (2017) </div>
+
+
+            <div class="item">探知重金属元素的有机传感器</div>
+            <div class="sub">有机合成实验室, 韩国科学英才学校 (오진호 博士领导)</div>
+            <div class="float2">
+                釜山，大韩民国
+            </div>
+            <div class="dot"> 合成了探知各种重金属元素的有机传感器，做性能试验，用IR和NMR验证合成. (2015) </div>
+            <br>
+
+            <div class="sub">莫斯科化学英才学校</div>
+            <div class="float2">
+                莫斯科, 俄罗斯
+            </div>
+            <div class="dot"> 用各种各样的配体改善有机传感器的性能 (2015) </div>
+        </div>
+        <div>
+            <div class="section">课外活动</div>
+            <div class="liner"></div>
+
+            <div class="item">著作和出版</div>
+
+            <div class="sub">KAIST研究杂志</div>
+            <div class="float2">大田，大韩民国
+                <div class="floatsub">2020.08~ 现在</div>
+            </div>
+            <div class="dot"><span class="bold">记者:</span> 跟KAIST研究计划处一起计划第一号研究杂志。采访KAIST的研究者，写作报道介绍他们的研究。</div>
+
+            <br>
+            <div class="sub"><a href="https://times.kaist.ac.kr/">KAIST报纸</a></div>
+            <div class="float2">大韩民国
+                <div class="floatsub">2017.09-2019.06</div>
+            </div>
+            <div class="dot"><span class="bold">学术部长: </span>报道KAIST的研究成果和最新科学技术论点。修订和编制技术报道。</div>
+            <div class="dot"><span class="bold">文化部记者: </span>报道最新文化论点和艺术作品。</div>
+            <br>
+
+
+
+            <div class="item">翻译</div>
+
+            <div class="sub">KAIST新生课程工程师</div>
+            <div class="float2">大田，大韩民国
+                <div class="floatsub">2020.08~ 现在</div>
+            </div>
+            <div class="dot"><span class="bold">译者: </span>  
+                翻译了KAIST一年级必需课程《开心大学生活》的教育资料</div>
+            <br>
+
+            <div class="item">领导活动</div>
+            <div class="sub">KAIST总长奖学金学生会</div>
+
+            <div class="dot"><span class="bold">国际部长: </span>  
+                跟印度IIT Madras计划与进行第一回《语境研究交流计划(Contextual Research Exchange Program)》</div>
+            <div class="float4">金奈, 印度
+                <div class="floatsub">2019.08, 2020.1</div>
+            </div>
+            <div class="littlebr"> </div>
+            <div class="dot"><span class="bold">学生代表</span></div>
+            <div class="float3">大田，大韩民国
+                <div class="floatsub">2017.12-2018.12</div>
+            </div>
+            <div class="dot3"><span class="bold">管理学术研讨会:</span>  管理和参加关于化学模型设计，机器学习，神经科学等各种各样的研讨会。</div>
+
+            <div class="dot3"><span class="bold">管理义工:</span>  跟大田市儒城区政府一起指导邻近初中生。</div>
+
+
+            <br>
+            <div class="sub">KAIST实践领导力团体(K-Let)</div>
+            <div class="dot"><span class="bold">领导: </span>关于自己尊重，进路设计等人生的问题进行讲演。</div>
+            <div class="float4">大韩民国
+                <div class="floatsub">2017.02-2019.08</div>
+            </div>
+            <div class="dot"><span class="bold">露营领导: </span>跟忠清南道教育厅进行被疏离阶层英才学生露营。</div>
+            <div class="float4">滨海州一带, 俄罗斯
+                <div class="floatsub">2017.12-2018.01</div>
+            </div>
+            <br>
+
+        
+            <div class="item">教育与知识分享</div>
+            <div class="sub">第三回KAIST国际战略研究所论坛 <a href="https://www.youtube.com/watch?v=fbj7YVgvKPI&t=10920s">(Youtube)</a></div>
+            <div class="float2">大田，大韩民国 <div class="floatsub">2020.09</div></div>
+            <div class="dot"><span class="bold">学生代表讨论参加者: </span> 提高生命工学的发展和超人类主义的伦理问题</div>
+                       
+            <br>
+            <div class="sub">KAIST计算学部</div>
+            <div class="float2">大田，大韩民国 <div class="floatsub">2019.08-现在</div></div>
+            <div class="dot"><span class="bold">助教: </span> CS101 (编程基础) 课程的实习助教。</div>
+            <div class="dot"><span class="bold">补充资料著者: </span> 写作CS101(编程基础)课程的实习，课题，和练习考试的答案和解说</div>
+            
+            <br>
+            <div class="sub">KAIST编程团体(kOOk)</div>
+            <div class="float2">大田，大韩民国 <div class="floatsub">2019.01-2020.02</div></div>
+            <div class="dot"><span class="bold">研讨会进行: </span>说明HTML/CSS/MongoDB等基本网路技术</div>
+            <div class="dot"><span class="bold">创立成员: </span>计划团体规律，还是营参加 Flask, R, 机器学习等编程研讨会</div>
+
+            <br>
+            <div class="sub">KAIST英才教育中心</div>
+            <div class="dot"><span class="bold">教师: </span> 教初中生Python编程</div>
+            <div class="float3">大田，大韩民国 <div class="floatsub">2020.09-现在</div></div>
+            <div class="littlebr"></div>
+            <div class="dot"><span class="bold">临时教师: </span> 用Arduino和Scratch进行编程实习</div>
+            <div class="float4">大田，大韩民国  <div class="floatsub">2020.08</div></div>
+
+
+            <br>
+            <div class="sub">美谈学会</div>
+            <div class="float3">大田，大韩民国 <div class="floatsub">2017.08-2017.12</div></div>
+            <div class="dot"><span class="bold">英文教师: </span> 教高中生英文。</div>
+        </div>
+
+        <div>
+            <div class="section">获奖</div>
+            <div class="liner"></div>
+
+            <div class="sub"><a href="http://www.alcob.org/kor/view.do?menuNo=187">2nd e-ICON 世界大会</a></div>
+            <div class="float2">庆州, 大韩民国
+                <div class="floatsub">2016.08</div>
+            </div>
+            <div class="dot"><span class="bold">(世界) 亚军: </span>制作社交网路，提供划词翻译功能和文章功能，让使用者体会外国文化和语言。
+            </div>
+            
+
+            <br>
+            <div class="sub">韩国科学英才学校R&E（研究和教育）工程</div>
+            <div class="float2">釜山, 大韩民国
+                <div class="floatsub">2015.02~ 2015.12</div>
+            </div>
+
+            <div class="dot"><span class="bold">第五回全国 R&E 共同发表会 - DGIST总长表彰</span> </div>
+            <div class="dot"><span class="bold">(校内) 个人优秀 / 团体奖励奖: </span> 制作分解木质素得能源的微生物燃料电池  。</div>
+            
+
+            <br>
+            <div class="sub"><a href="https://www.sciencechallenge.or.kr/result/paper.hsc?searchMasterCode=15101418021876123CCJ&searchCategory=">韩国化学科学大赛</a></div>
+            <div class="float2">大田，大韩民国
+                <div class="floatsub">2015.08~ 2015.12</div>
+            </div>
+            <div class="dot"><span class="bold">(国内) 铜奖:</span> 利用抗生素抵抗性基因开发放射线危害度诊断工具.</div>
+
+            <br>
+            <div class="sub"><a href="http://www.kypt.or.kr/main/board/read.action?q=238f4d46b9f273c6996ef8a57521b32cbfa32b47038e34c0c4eb005014625f52e42003f3dfc655cd27335b017d341b620a8f3115b11f9b74acd771022164f194">韩国青年物理讨论大赛（KYPT） </a></div>
+            <div class="float2">仁川，大韩民国
+                <div class="floatsub">2015.01</div>
+            </div>
+            <div class="dot"><span class="bold">(国内) 银奖:</span> 调查尼龙纤维基板人工肌肉。还是，关于湿衣服显暗的现象进行研究。</div>
+
+        </div>
+
+
+
+        <div>
+            <div class="section">个人项目</div>
+            <div class="liner"></div>
+
+            <div class="dot">2019 <span class="bold2">Yet Nonamed</span> Testing False Positive Speech Recognition Using Evolutionary Algorithms</div>
+
+            <div class="dot">2019 <span class="bold2">Travelling Salesman Problem Solver</span> Solves Travelling Salesman Problem with Stochastic Algorithms</div>
+
+            <div class="dot">2019 <span class="bold2">Parapipe</span> Task Organiser that Shapes Tasks as Parallel Pipelines</div>
+
+            <div class="dot">2019 <span class="bold2">re:Cruit</span> Job Hunting Platform for Students</div>
+
+            <div class="dot">2019 <span class="bold2">PoZangZee</span> Renovated Email System for Expert Users</div>
+
+            <div class="dot">2018 <span class="bold2">Mumurm</span> Crowdsourcing Service for Restful Places</div>
+
+            <div class="dot">2016 <span class="bold2">Culang</span> Culture & Language Exchange at Scale via Social Media</div>
+
+        </div>
+        <div>
+            <div class="section">吉他技术</div>
+            <div class="liner"></div>
+            <div class="dot2"><span class="bold3">自然语言</span> 韩语(母语)), 英语(第一语言), 汉语(HSK5级), 德语(初级), 俄语(初级), 西语(初级) </div>
+
+            <div class="dot2"><span class="bold3">编程语言</span> Python, Javascript, Java, C, HTML/CSS </div>
+
+            <div class="dot2"><span class="bold3">编程Framework</span> Flask, MongoDB, ReactJS </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="liner"></div>
+        </div>
+        <div class="floor"></div>
+    </div>
+</body>
+</html>
